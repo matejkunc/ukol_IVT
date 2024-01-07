@@ -1,0 +1,126 @@
+html{
+    background-image: url(bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1400px;
+}
+*{
+    color: lightgray;
+}
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-width: 6px;
+    border-color: rgba(70, 130, 180, 1);
+    border-style: double;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+header:hover{
+    background-color: rgba(70, 130, 180, 1);
+}
+.vlevo{
+    text-align: left;
+    color: rgba(211, 211, 211, 1);
+}
+.vpravo{
+    text-align: right;
+    color: lightgray;
+    opacity: 100%;
+}
+article{
+    position: absolute;
+    overflow: auto;
+    left: 20%;
+    top: 100px;
+    right: 10px;
+    max-width: 80%;
+    max-height: 1280px;
+    font-size: xx-large;}
+@media screen and (min-width : 1000px) {
+nav{
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    right: 85%;
+    font-size: x-large;
+}
+li a{
+    display: block;
+    max-width: 200px;
+    height: 80px;
+    padding: 8px 16px;
+    margin: 0px;
+    background-color: rgba(70, 130, 180, 0.1);
+    text-align: center;
+}
+li a:hover{
+    background-color: rgba(70, 130, 180, 1);
+
+}
+ul{
+    list-style-type: none;
+}}
+@media screen and (max-width : 1000px){
+    nav{
+        position: fixed;
+        left: -25%;
+        top: 100px;
+        right: 85%;
+        font-size: x-large;
+        background-color: rgba(70, 130, 180, 0.1);
+    }
+    li a{
+        display: block;
+        max-width: 200px;
+        min-height: 80px;
+        padding: 0px 0px;
+        margin: 0px;
+        text-align: left;
+    }
+    nav:hover{
+        background-color: rgba(70, 130, 180, 1);
+        animation: menu 1s forwards;
+    }
+    ul{
+        list-style-type: none;
+    }
+    @keyframes menu {
+        from {left: -25%;}
+        to {left: -30px}
+    }
+}
+@media screen and (max-width : 1000px){
+    nav{
+        position: fixed;
+        left: -25%;
+        top: 100px;
+        right: 85%;
+        font-size: x-large;
+        background-color: rgba(70, 130, 180, 0.1);
+    }
+    li a{
+        display: block;
+        max-width: 200px;
+        min-height: 80px;
+        padding: 0px 0px;
+        margin: 0px;
+        text-align: left;
+    }
+    nav:hover{
+        background-color: rgba(70, 130, 180, 1);
+        animation: menu 1s forwards;
+    }
+    ul{
+        list-style-type: none;
+    }
+    @keyframes menu {
+        from {left: -25%;}
+        to {left: -30px}
+    }
+}
